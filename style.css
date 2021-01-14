@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+   width: 100vw;
+   height: auto;
+   font-family: serif ;
+ }
+ .header-bg {
+   background-color: black;
+   height: 100vh;
+  }
+  header {
+    height: 100vh;
+  }
+  .typing {
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background-image: url('my-icon.JPG');
+    background-size: 100vw 100vh;
+ }
+ .typed_wrap {
+   position: absolute;
+   width: 100vw;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgba(7, 6, 6, 0.5);
+ }
+ .typed_wrap h1 {
+   color: #FFF;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 3rem;
+   height: 100px;
+   line-height: 100px;
+   white-space: nowrap; /*改行しない*/
+ }
+ .typed::after {
+   content: "|";
+   animation: blink 0.7s infinite;
+ }
+ @keyframes blink {
+   50%{opacity: 0;}
+ }
+
+ .section-Qiita-js {
+   margin-top: 100px;
+   height: auto;
+ }
+
+ .title-box {
+   text-align: center;
+   width: 60vw;
+   height: 50px;
+   line-height: 50px;
+   margin: 0 auto;
+   font-weight: bold;
+   font-size: 3rem;
+   display: flex;
+   align-items: center;
+ }
+ .title-box::before,
+ .title-box::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px; /* 線の太さ */
+  background: #ffaaaa; /* 線の色 */
+  margin:0 2em; /* 文字と線の余白 */
+ }
+
+
+ /*メイン部分*/
+ main {
+   padding: 250px;
+   width: 100vw;
+   background-color: rgba(20, 20, 20, 0.8);
+ }
+
+ .contents li {
+   position: relative;
+   list-style: none;
+ }
+
+ .contents li.show h2,
+ .contents li.show p,
+ main .contents li.show a {
+   opacity: 1;
+   transform: none;
+ }
+
+ .contents li:not(:first-of-type) {
+   margin-top: 200px;
+ }
+
+ .contents li:nth-of-type(odd) .contentsText {
+   right: 0;
+ }
+
+ .contents li:nth-of-type(even) .contentsText {
+   align-items: flex-start;
+   transform: translate(-20px, -20px);
+}
+
+ .contents li:nth-of-type(even) a {
+   margin-left: auto;
+   transform: translate(20px, 20px);
+ }
+
+ .contentsText {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   position: absolute;
+   top: 40px;
+ }
+
+ .contents h2 {
+   color: #FFF;
+   font-size: 50px;
+   font-weight: bold;
+   white-space: nowrap;
+   background-color: rgba(20, 20, 20, 0.8);
+   padding: 10px 20px;
+   line-height: 1.4;
+   letter-spacing: .05em;
+   border-radius: 5px;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: 1s;
+ }
+
+ .contents p {
+   line-height: 1.6;
+   background-color: #555;
+   font-size: 14px;
+   max-width: 340px;
+   margin-top: 30px;
+   padding: 15px;
+   border-radius: 5px;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: 1s;
+ }
+
+ .contents a {
+   display: block;
+   width: 65%;
+   border-radius: 5px;
+   opacity: 0;
+   transform: translateX(-20px);
+   transition: 1s 0.5s;
+ }
+
+ .contents a img {
+   display: block;
+   width: 100%;
+ }
+
+ footer {
+   height: 50px;
+   text-align: center;
+ }
+
+ footer p {
+   line-height: 50px;
+   font-weight: bold;
+ }
