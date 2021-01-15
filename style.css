@@ -38,7 +38,7 @@
    font-size: 3rem;
    height: 100px;
    line-height: 100px;
-   white-space: nowrap; /*改行しない*/
+   /* white-space: nowrap; */
  }
  .typed::after {
    content: "|";
@@ -169,4 +169,11 @@
  footer p {
    line-height: 50px;
    font-weight: bold;
+ }
+
+ /* レスポンシブデザイン */
+ @media (max-width: 400px) {
+  .typed_wrap h1 {
+    font-size: 1.5rem;
+  }
  }
