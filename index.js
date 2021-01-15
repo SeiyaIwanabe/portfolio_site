@@ -1,4 +1,5 @@
 $(function() {
+  //タイピングアニメーション
   $('.typed').typed({
     strings: ["welcome to My Portfolio.", "Let's scroll down."],
     typeSpeed: 100,
@@ -10,6 +11,7 @@ $(function() {
     backDelay: 500
   });
 
+  //スクロールしたら要素が出現
   const targetElement = document.querySelectorAll(".animationTarget");
   document.addEventListener("scroll", function() {
     for (let i = 0; i < targetElement.length; i++) {
@@ -20,4 +22,49 @@ $(function() {
       }
     };
   })
+
+  // 線を動かす
+  $('.line').animate({"width":"100%"}, 1000, function() {
+    $('.line').css("right", 0)
+    $('.line').animate({"width":"0%"}, function() {
+      $('.up').animate({"height":"0%"});
+      $('.down').animate({"height":"0%"});
+    });
+  })
+
+  // 矢印を動かす
+  setInterval(function() {
+
+    $("#arrow_1").animate({
+      bottom: "-=55px"}, 1000);
+    $("#arrow_1").animate({
+      bottom: "+=55px"}, 1000);
+
+    $("#arrow_2").animate({
+      bottom: "-=45px"}, 1000);
+    $("#arrow_2").animate({
+      bottom: "+=45px"}, 1000);
+
+    $("#arrow_3").animate({
+      bottom: "-=35px"}, 1000);
+    $("#arrow_3").animate({
+      bottom: "+=35px"}, 1000);
+
+    $("#arrow_4").animate({
+      bottom: "-=25px"}, 1000);
+    $("#arrow_4").animate({
+      bottom: "+=25px"}, 1000);
+
+    $("#arrow_5").animate({
+      bottom: "-=15px"}, 1000);
+    $("#arrow_5").animate({
+      bottom: "+=15px"}, 1000);
+    
+
+
+},1000);
+  
+  
+
 });
+

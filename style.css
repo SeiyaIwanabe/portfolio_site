@@ -8,9 +8,35 @@
    width: 100vw;
    height: auto;
    font-family: serif ;
+ }  
+
+ .line {
+   width: 0%;
+   height: 1px;
+   background-color: #FFF;
+   position: fixed;
+   top: 50%;
+   z-index: 3;
  }
+
+ .up {
+   width: 100vw;
+   height: 50%;
+   background-color: #000;
+   position: fixed;
+   z-index: 2;
+ }
+
+ .down {
+  width: 100vw;
+  height: 50%;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
  .header-bg {
-   background-color: black;
+   /* background-color: black; */
    height: 100vh;
   }
   header {
@@ -20,7 +46,7 @@
     height: 100%;
     width: 100vw;
     position: relative;
-    background-image: url('my-icon.JPG');
+    background-image: url('images/my-icon.JPG');
     background-size: 100vw 100vh;
  }
  .typed_wrap {
@@ -36,9 +62,8 @@
    color: #FFF;
    font-family: 'Times New Roman', Times, serif;
    font-size: 3rem;
-   height: 100px;
-   line-height: 100px;
-   /* white-space: nowrap; */
+   height: 200px;
+   line-height: 200px;
  }
  .typed::after {
    content: "|";
@@ -48,32 +73,59 @@
    50%{opacity: 0;}
  }
 
- .section-Qiita-js {
-   margin-top: 100px;
-   height: auto;
+ .arrow-1 {
+   margin-top: 10px;
+  position: absolute;
+  right: 50vw;
+  bottom: 120px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent #FFF #FFF;
+  transform: rotate(-45deg);  
+ }
+ .arrow-2 {
+  position: absolute;
+  right: 50vw;
+  bottom: 100px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent #FFF #FFF;
+  transform: rotate(-45deg); 
+ }
+ .arrow-3 {
+  position: absolute;
+  right: 50vw;
+  bottom: 80px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent #FFF #FFF;
+  transform: rotate(-45deg); 
+ }
+ .arrow-4 {
+  position: absolute;
+  right: 50vw;
+  bottom: 60px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent #FFF #FFF;
+  transform: rotate(-45deg); 
+ }
+ .arrow-5 {
+  position: absolute;
+  right: 50vw;
+  bottom: 40px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent #FFF #FFF;
+  transform: rotate(-45deg); 
  }
 
- .title-box {
-   text-align: center;
-   width: 60vw;
-   height: 50px;
-   line-height: 50px;
-   margin: 0 auto;
-   font-weight: bold;
-   font-size: 3rem;
-   display: flex;
-   align-items: center;
- }
- .title-box::before,
- .title-box::after {
-  content: "";
-  flex-grow: 1;
-  height: 2px; /* 線の太さ */
-  background: #ffaaaa; /* 線の色 */
-  margin:0 2em; /* 文字と線の余白 */
- }
-
-
+ 
  /*メイン部分*/
  main {
    padding: 250px;
@@ -136,9 +188,10 @@
 
  .contents p {
    line-height: 1.6;
+   color: #FFF;
    background-color: #555;
    font-size: 14px;
-   max-width: 340px;
+   max-width: 500px;
    margin-top: 30px;
    padding: 15px;
    border-radius: 5px;
@@ -175,5 +228,38 @@
  @media (max-width: 400px) {
   .typed_wrap h1 {
     font-size: 1.5rem;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  main {
+    padding: 100px;
+    width: 100vw;
+  }
+
+  .contents li:not(:first-of-type) {
+    margin-top: 100px;
+  }
+
+  .contentsText {
+    width: 150px;
+    top: 40px;
+    left: -60px;
+  }
+
+  .contents h2 {
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 1.4;
+  }
+
+  .contents a img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contents p {
+    line-height: 1.6;
+    font-size: 10px;
   }
  }
