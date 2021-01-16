@@ -24,13 +24,13 @@ $(function() {
   })
 
   // 線を動かす
-  $('.line').animate({"width":"100%"}, 1000, function() {
-    $('.line').css("right", 0)
-    $('.line').animate({"width":"0%"}, function() {
-      $('.up').animate({"height":"0%"});
-      $('.down').animate({"height":"0%"});
-    });
-  })
+  // $('.line').animate({"width":"100%"}, 1000, function() {
+  //   $('.line').css("right", 0)
+  //   $('.line').animate({"width":"0%"}, function() {
+  //     $('.up').animate({"height":"0%"});
+  //     $('.down').animate({"height":"0%"});
+  //   });
+  // })
 
   // 矢印を動かす
   setInterval(function() {
@@ -59,9 +59,7 @@ $(function() {
       bottom: "-=15px"}, 1000);
     $("#arrow_5").animate({
       bottom: "+=15px"}, 1000);
-    
-
-
+  
 },1000);
   
   
