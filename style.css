@@ -93,6 +93,7 @@
  }
 
  .bottom-text {
+   line-height: 2.5;
   position: absolute;
   left: 100px;
   bottom: 100px;
@@ -231,12 +232,11 @@
  }
 
  .frontend {
-  color: red;
-
+  color: #FFF;
  }
  .backend {
    font-weight: bold;
-   color: red;
+   color: #FFF;
  }
 
  .contents a {
@@ -280,8 +280,8 @@
     position: absolute;
     left: 50px;
     bottom: 200px;
-    color: #FFF;
-    font-size: 14px;
+    color: #FFF;s
+    font-size: 16px;
     letter-spacing: 3px;
   }
 
