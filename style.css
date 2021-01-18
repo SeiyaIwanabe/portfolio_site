@@ -36,7 +36,6 @@
   z-index: 2;
 }
  .header-bg {
-   /* background-color: black; */
    height: 100vh;
   }
   header {
@@ -44,10 +43,28 @@
   }
   /* ヘッダートップ */
   .top-contents {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     height: 70px;
     background: rgba(7, 6, 6, 0.5);
     display: flex;
     align-items: center;
+    z-index: 2;
+  }
+
+  .right-content {
+    display: flex;
+    position: fixed;
+    right: 100px;
+  }
+  .right-content p {
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+  }
+  .fab .fa-twitter-square {
+    display: block;
   }
 
    i {
@@ -60,6 +77,7 @@
 
    .owner-name {
      color: #8B0000;
+     font-size: large;
    }
   .typing {
     height: 100%;
@@ -177,7 +195,7 @@
  }
 
  .contents li:not(:first-of-type) {
-   margin-top: 200px;
+   margin-top: 300px;
  }
 
  .contents li:nth-of-type(odd) .contentsText {
@@ -231,12 +249,28 @@
    transition: 1s;
  }
 
- .frontend {
-  color: #FFF;
+ .heading {
+   display: block;
+   margin-bottom: 2px;
+   font-weight: bold;
+   font-size: 16px;
+  border-bottom: 1px solid lightgray;
  }
- .backend {
+
+ .frontend {
+   font-size: 16px;
    font-weight: bold;
    color: #FFF;
+ }
+ .backend {
+   display: block;
+   margin-top: 15px;
+   font-size: 16px;
+   font-weight: bold;
+   color: #FFF;
+ }
+ .tools {
+   font-weight: bold;
  }
 
  .contents a {
@@ -251,6 +285,11 @@
  .contents a img {
    display: block;
    width: 100%;
+ }
+
+ #languages {
+   display: block;
+   width: 90%;
  }
 
  footer {

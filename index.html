@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel = “shortcut icon” type = “image / x-icon” href = “/ favicon.ico”>
+  <link rel="icon" type="image/x-icon" href="images/icon.png">
   <title>Iwanabe Seiya's PF</title>
 </head>
 <body>
@@ -18,6 +18,12 @@
         <div class="top-contents">
           <i class="fas fa-universal-access"></i> 
           <p class="owner-name">Iwanabe Seiya's Portfolio</p>
+          <div class="right-content">
+            <p>Contact</p>
+            <a href="https://twitter.com/anago1030">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </div>
         </div>
         <div class="bottom-text">
           <p>
@@ -47,27 +53,24 @@
       <ul class="contents">
         <li class="animationTarget">
           <a href="#">
-            <img src="images/language.png" alt="言語の画像">
+            <img src="images/language.png" alt="言語の画像", id="languages">
           </a>
           <div class="contentsText">
             <h2>学んだ言語</h2>
             <p>
-              ポートフォリオ制作の過程で学んだ言語一覧です。
+              <span class="heading">ポートフォリオ制作の過程で学んだ言語一覧です。</span>
               <br>
               <span class="frontend">
                 【 フロントエンド（マークアップ） 】
               </span>
               <br>
-                ・HTML5,CSS, haml, Sass
+                ・HTML5, CSS, haml, Sass
               <br>
                 ・Javascrpt (フレームワーク: jQuery)
-              <br>
               <span class="backend">
                 【 バックエンド 】
               </span>
-              <br>
                 ・Ruby (フレームワーク: Ruby on Rails)
-
             </p>
           </div>
         </li>
@@ -84,17 +87,25 @@
               <br>
               広告宣伝やイベントを主催する企業をつなぐ
               <br>
-              プラットフォームです。
+              プラットフォームサービスです。
               <br>
               -----------------------------------------------------------------------------
               <br>
-              バージョン管理ツール: Github
+              バージョン管理システム: <span class="tools">git</span>
               <br>
-              Database: Mysql, MariaDB
+              インフラ: <span class="tools">aws(EC2, , S3, , RDS, Route53)</span>
               <br>
-              Webサーバー: nginx
+              データベース: <span class="tools">Mysql, MariaDB</span>
               <br>
-              アプリケーションサーバー: unicorn
+              Webサーバー: <span class="tools">nginx</span>
+              <br>
+              アプリケーションサーバー: <span class="tools">unicorn</span>
+              <br>
+              静的コード解析ツール: <span class="tools">RuboCop</span>
+              <br>
+              デプロイ自動化ツール: <span class="tools">Capistrano</span>
+              <br>
+              ドメイン: <span class="tools">entertainer-sample.com（画像がリンクになっています）</span>
 
 
             </p>
@@ -102,14 +113,35 @@
         </li>
         <li class="animationTarget">
           <a href="https://qiita.com/anago1030/items/73ed40cc7f093edf78d9">
-            <img src="images/Qiita-sample.png" alt="Qiitaの画像">
+            <img src="images/tools.png" alt="ツールの画像">
+          </a>
+          <div class="contentsText">
+            <h2>使用ツール</h2>
+            <p>
+              <span class="heading">使用ツール一覧</span>
+              <br>
+              クラウド作図サービス(ER図作成): <span class="tools">Lucidchart</span>
+              <br>
+              バージョン管理システム: <span class="tools">Github</span>
+              <br>
+              タスク管理: <span class="tools">Trello</span>
+              <br>
+              Web制作ツール: <span class="tools">Responsively</span>
+              <br>
+              機械翻訳システム: <span class="tools">DeepL</span>
+            </p>
+          </div>
+        </li>
+        <li class="animationTarget">
+          <a href="https://qiita.com/anago1030">
+            <img src="images/Qiita-introduction.png" alt="Qiitaの画像">
           </a>
           <div class="contentsText">
             <h2>Qiitaで発信</h2>
             <p>
-              主にポートフォリオ開発中の気づきを発信しています。
+              主にアプリ開発中の気づきを発信しています。
               <br>
-              累計で19記事を執筆しました。
+              累計で20記事を執筆しました。
             </p>
           </div>
         </li>
