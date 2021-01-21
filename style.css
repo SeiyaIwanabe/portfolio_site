@@ -45,18 +45,21 @@
   .top-contents {
     position: fixed;
     top: 0;
+    z-index: 2;
     width: 100vw;
     height: 70px;
     background: rgba(7, 6, 6, 0.5);
     display: flex;
     align-items: center;
-    z-index: 2;
+    justify-content: space-between;
+  }
+  .left-content {
+    display: flex;
   }
 
   .right-content {
     display: flex;
-    position: fixed;
-    right: 100px;
+    margin-right: 50px;
   }
   .right-content p {
     color: #FFF;
@@ -303,16 +306,33 @@
  }
 
  /* レスポンシブデザイン */
- @media (max-width: 400px) {
+ @media (max-width: 480px) {
 
   .top-contents {
-    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .left-content {
+    width: 260px;
+  }
+
+  .owner-name {
+    font-size: 0.9em;
   }
 
   .typed_wrap h1 {
     font-size: 1.5rem;
     height: 100px;
     line-height: 100px;
+  }
+
+
+  .right-content {
+    margin-right: 0;
+  }
+  .right-content p {
+    font-size: 0.9rem;
   }
 
   .bottom-text {
