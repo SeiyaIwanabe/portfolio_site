@@ -275,7 +275,7 @@
  }
  .work-explanation {
    display: block;
-   border-bottom: 1p solid lightgray;
+   border-bottom: 1px solid lightgray;
  }
 
  .contents a {
