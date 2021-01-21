@@ -123,6 +123,16 @@
   letter-spacing: 3px;
  }
 
+.self-introduction {
+  line-height: 2.5;
+  position: absolute;
+  right: 100px;
+  bottom: 70px;
+  color: #FFF;
+  font-size: large;
+  letter-spacing: 3px;
+}
+
  .arrow-1 {
   margin-top: 10px;
   position: absolute;
@@ -355,6 +365,16 @@
     left: 50px;
     bottom: 170px;
     font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .self-introduction {
+    line-height: 2.0;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    color: #FFF;
+    font-size: 0.7rem;
     letter-spacing: 3px;
   }
 
