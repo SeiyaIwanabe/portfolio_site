@@ -273,6 +273,10 @@
  .tools {
    font-weight: bold;
  }
+ .work-explanation {
+   display: block;
+   border-bottom: 1p solid lightgray;
+ }
 
  .contents a {
    display: block;
@@ -373,27 +377,98 @@
   main {
     padding: 100px;
     width: 100vw;
+    position: relative;
   }
 
   .contents li:not(:first-of-type) {
     margin-top: 100px;
   }
 
+  .animationTarget {
+    margin-bottom: 200px;
+  }
+
   .contentsText {
+    position: absolute;
     width: 150px;
-    top: 40px;
-    left: -60px;
+    top: -10px;
+    left: -80px;
+  }
+  .contentsText p {
+    font-size: small;
   }
 
   .contents h2 {
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px 20px;
     line-height: 1.4;
+  }
+
+  .contents h2 p {
+    font-size: small;
+  }
+
+  .contents h2 p span {
+    font-size: small;
+  }
+
+  .heading {
+    font-size: small;
+  }
+  .frontend {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+  .backend {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+  .work-explanation {
+    display: block;
+    border-bottom: 1px solid lightgray;
+  } 
+  
+  .contents a { 
+
+    width: 200px;
+    height: 200px;
   }
 
   .contents a img {
     width: 200px;
     height: 200px;
+  }
+
+  #languages {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 60px;
+  }
+
+  #work {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 60px;
+  }
+
+  #work-intriduction {
+    width: 200px;
+  }
+
+  #tools-image {
+    width: 170px;
+    display: block;
+    position: absolute;
+    left: 60px;
+  }
+
+  #Qiita-image {
+    width: 170px;
+    display: block;
+    position: absolute;
+    left: 60px; 
   }
 
   .contents p {
