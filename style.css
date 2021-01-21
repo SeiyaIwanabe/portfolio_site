@@ -121,6 +121,7 @@
   color: #FFF;
   font-size: large;
   letter-spacing: 3px;
+  font-weight: bold;
  }
 
 .self-introduction {
@@ -131,6 +132,7 @@
   color: #FFF;
   font-size: large;
   letter-spacing: 3px;
+  font-weight: bold;
 }
 
  .arrow-1 {
@@ -260,6 +262,12 @@
    transition: 1s;
  }
 
+ .school {
+   font-weight: bold;
+   display: block;
+   border-bottom: 1px solid lightgray;
+ }
+
  .heading {
    display: block;
    margin-bottom: 2px;
@@ -305,6 +313,16 @@
  #languages {
    display: block;
    width: 90%;
+ }
+ #self-image {
+   display: block;
+   width: 70%;
+   height: 70%;
+ }
+
+ .self-introduction-text {
+   line-height: 4.0;
+   font-size: large;
  }
 
  footer {
@@ -366,6 +384,7 @@
     bottom: 170px;
     font-size: 14px;
     letter-spacing: 3px;
+    font-weight: bold;
   }
 
   .self-introduction {
@@ -376,6 +395,7 @@
     color: #FFF;
     font-size: 0.7rem;
     letter-spacing: 3px;
+    font-weight: bold;
   }
 
   .arrow-1 {
@@ -405,7 +425,7 @@
   }
 
   .animationTarget {
-    margin-bottom: 200px;
+    margin-bottom: 230px;
   }
 
   .contentsText {
@@ -457,6 +477,14 @@
   .contents a img {
     width: 200px;
     height: 200px;
+  }
+
+  #self-image {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 80%;
+    left: 60px  ;
   }
 
   #languages {
