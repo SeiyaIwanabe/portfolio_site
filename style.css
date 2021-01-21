@@ -314,7 +314,18 @@
   }
 
   .left-content {
+    height: 30px;
+    line-height: 30px;
+    padding-top: 5p;
     width: 260px;
+  }
+
+  i {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 3px;
   }
 
   .owner-name {
@@ -329,6 +340,8 @@
 
 
   .right-content {
+    height: 30px;
+    line-height: 30px;
     margin-right: 0;
   }
   .right-content p {
