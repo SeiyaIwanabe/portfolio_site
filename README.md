@@ -10,5 +10,4 @@
 
 The portfolio is explained in a separate repository.
 Please have a look if you like.
-↓
 https://github.com/SeiyaIwanabe/entertainer
