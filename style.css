@@ -265,7 +265,21 @@
  .school {
    font-weight: bold;
    display: block;
+   border-bottom: 1px solid black;
+   font-size: large;
+ }
+ .contact {
+  font-weight: bold;
+  display: block;
+  border-bottom: 1px solid black;
+  font-size: large;
+ }
+ #github {
+   display: block;
    border-bottom: 1px solid lightgray;
+ }
+ #github-entertainer {
+  display: block;
  }
 
  .heading {
@@ -432,7 +446,7 @@
     position: absolute;
     width: 150px;
     top: -10px;
-    left: -40px;
+    left: -25px;
   }
   .contentsText p {
     font-size: small;
@@ -469,9 +483,16 @@
   } 
   
   .contents a { 
-
     width: 200px;
     height: 200px;
+  }
+  #github-entertainer {
+    display: block;
+    height: auto;
+  }
+  #github {
+    display: block;
+    height: auto;
   }
 
   .contents a img {
@@ -482,8 +503,8 @@
   #self-image {
     position: absolute;
     display: block;
-    width: 80%;
-    height: 80%;
+    width: 170px;
+    height: 200px;
     left: 60px  ;
   }
 
