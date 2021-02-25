@@ -279,7 +279,10 @@
    border-bottom: 1px solid lightgray;
  }
  #github-entertainer {
+   text-align: center;
   display: block;
+  width: 200px;
+  border: 1px solid black;
  }
 
  .heading {
