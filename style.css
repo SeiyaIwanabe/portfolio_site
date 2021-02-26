@@ -294,6 +294,18 @@
   outline-offset: 12px;
   text-shadow: 2px 2px 3px #000;
  }
+
+ .video {
+   position: relative;
+   height: 450px;
+   padding-bottom: 56.25%;
+ }
+ .video iframe {
+   position: absolute;
+   left: 300px;
+   width: 500px;
+   height: 315px;
+ }
  #github-entertainer {
   text-align: center;
   display: block;
@@ -382,6 +394,8 @@
    line-height: 50px;
    font-weight: bold;
  }
+
+
 
  /* レスポンシブデザイン */
  @media (max-width: 480px) {
@@ -524,9 +538,23 @@
     display: block;
     height: auto;
   }
+
+  .video {
+    position: relative;
+    height: 450px;
+    padding-bottom: 56.25%;
+  }
+  .video iframe {
+    position: absolute;
+    left: 20px;
+    width: 200px;
+    height: 315px;
+  }
   #github {
-    display: block;
     height: auto;
+    display: block;
+    width: 170px;
+    font-size: 0.8rem;
   }
 
   .contents a img {
