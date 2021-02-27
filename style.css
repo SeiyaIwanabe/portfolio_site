@@ -483,11 +483,11 @@
   }
 
   .contents li:not(:first-of-type) {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .animationTarget {
-    margin-bottom: 230px;
+    margin-bottom: 280px;
   }
 
   .contentsText {
@@ -517,6 +517,12 @@
   .heading {
     font-size: small;
   }
+  .school {
+    font-size: 0.8rem;
+  }
+  .contact {
+    font-size: 0.8rem;
+  }
   .frontend {
     font-size: 0.5rem;
     font-weight: bold;
@@ -537,6 +543,8 @@
   #github-entertainer {
     display: block;
     height: auto;
+    font-size: 0.7rem;
+    width: 140px;
   }
 
   .video {
@@ -547,14 +555,14 @@
   .video iframe {
     position: absolute;
     left: 20px;
-    width: 200px;
-    height: 315px;
+    width: 220px;
+    height: 300px;
   }
   #github {
     height: auto;
     display: block;
-    width: 170px;
-    font-size: 0.8rem;
+    width: 140px;
+    font-size: 0.7rem;
   }
 
   .contents a img {
@@ -565,8 +573,8 @@
   #self-image {
     position: absolute;
     display: block;
-    width: 170px;
-    height: 200px;
+    width: 180px;
+    height: 300px;
     left: 60px  ;
   }
 
