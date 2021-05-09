@@ -12,18 +12,18 @@ $(function() {
   });
 
   //スクロールしたら要素が出現
-  const targetElement = document.querySelectorAll(".animationTarget");
-  document.addEventListener("scroll", function() {
-    for (let i = 0; i < targetElement.length; i++) {
-      const  getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.4
+  // const targetElement = document.querySelectorAll(".animationTarget");
+  // document.addEventListener("scroll", function() {
+  //   for (let i = 0; i < targetElement.length; i++) {
+  //     const  getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.4
 
-      if (window.innerHeight > getElementDistance) {
-        targetElement[i].classList.add("show");
-      }
-    };
-  })
+  //     if (window.innerHeight > getElementDistance) {
+  //       targetElement[i].classList.add("show");
+  //     }
+  //   };
+  // })
 
-  // 線を動かす
+  // イニシャルアニメーション
   $('.line').animate({"width":"100%"}, 1000, function() {
     $('.line').css("right", 0)
     $('.line').animate({"width":"0%"}, function() {
@@ -60,9 +60,21 @@ $(function() {
     $("#arrow_5").animate({
       bottom: "+=15px"}, 1000);
   
-},1000);
-  
-  
+  },1000);
+
+  // 指定位置にスクロール
+  $('a[href^="#"]').click(function() {
+    // スクロールの速度
+    let speed = 400; // ミリ秒で記述
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    position -= 70;
+    $('body,html').animate({
+      scrollTop: position
+    }, speed, 'swing');
+    return false;
+  });
 
 });
 

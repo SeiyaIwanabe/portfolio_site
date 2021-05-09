@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -11,22 +11,24 @@
 </head>
 
 <body>
-  <div class="line"></div>  
+  <!-- イニシャルアニメーション -->
+  <!-- <div class="line"></div>  
   <div class="up"></div>
   <div class="down"></div>
-  <div class="header-bg">
+  <div class="header-bg"> -->
+
     <header>
       <div class="typing">
         <div class="top-contents">
           <div class="left-content">
             <p class="owner-name">Iwanabe Seiya's Portfolio</p>
           </div>
-          <!-- <div class="right-content">
-            <p>Contact</p>
-            <a href="https://twitter.com/anago1030">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </div> -->
+          <div class="right-content">
+            <a href="#sec1" class="button">about me</a>
+            <a href="#sec2" class="button">Ruby on Rails</a>
+            <a href="#sec3" class="button">React</a>
+            <a href="#sec4" class="button">Other</a>
+          </div>
         </div>
         <!-- <div class="bottom-text">
           <p>
@@ -53,126 +55,155 @@
     </header>
 
     <main>
-      <ul class="contents">
-        <li class="animationTarget">
-          <a href="#">
-            <img src="images/self-icon.jpg" alt="自分の画像", id="self-image">
-          </a>  
-          <div class="contentsText">
-            <h2>自己紹介</h2>
-            <p class="self-introduction-text">
-              <span class="school">立教大学法学部法学科</span>
-              <br>
-              学生時代は300人規模のダンスサークルに尽力
-              <br>
-              <br>
-              関東の57サークルが所属する学生ダンス連盟を運営
-              <br>
-              <br>
-              3000人が来場するダンス公演を仲間と創作
-              <br>
-              <br>
-              <span class="contact">Contact</span>
-              <br>
-              <a href="https://github.com/SeiyaIwanabe" id="github">Githubアカウントはこちら</a>
-              <br>
-              Mail: s1030.business@gmail.com
-            </p>
-          </div>
-          <li class="animationTarget">
-            <div class="video">
-              <iframe  src="https://www.youtube.com/embed/DY-zCeC-QqE" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="section" id="sec1">about me</div>
+      <div class="introduction-area">
+        <div class="main-right">
+          <img src="images/self-icon.jpg", class="self-icon">
+           <div class="socialLink">
+            <h1 class="title">＜ ソーシャルリンク ＞</h1>
+            <a href="https://github.com/SeiyaIwanabe", class="githubLink">
+              <i class="fab fa-github-square"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://qiita.com/anago1030", class="qiitaLink">
+              <i class="fas fa-edit"></i>
+              <p>Qiita</p>
+            </a>
+            <a href="mailto:s1030.business@gmail.com", class="mailLink">
+              <i class="fas fa-envelope"></i>
+              <p>メールアドレス</p>
+            </a>
+           </div>
+        </div>
+        <div class="main-left"></div>
+      </div>
+      <div class="section" id="sec2">Ruby on Rails</div>
+      <div class="introduction-area">
+        <div class="main-right">
+          <img src="images/pahoo.png", class="pahoo-icon">
+           <div class="socialLink">
+            <h1 class="title">＜ アプリケーション情報 ＞</h1>
+            <div class="app-area">
+              <p>ドメイン名:</p>
+              <a href="http://pahoo-beta.work/" class="app-link">http://pahoo-beta.work/</a>
             </div>
-            <div class="contentsText">
-              <h2>ダンス作品</h2>
-              <p>
-                <span class="frontend">
-                  【 Step Jam Vol.12 】
-                </span>
-                <br>
-                <br>
-                メンバーを17人集めてCrewを結成し
-                <br>
-                振付師として作品を創りました。
-                <br>
-                閲覧される際はYoutubeでご覧ください。
-              </p>
+            <a href="https://github.com/SeiyaIwanabe/pahoo_beta", class="githubLink">
+              <i class="fab fa-github-square"></i>
+              <p class="github-url">GithubリポジトリURL</p>
+            </a>
+           </div>
+        </div>
+        <div class="main-left">
+          <div class="app-name">Pahoo</div>
+          <div class="app-time">
+            <i class="fas fa-calendar-alt"></i>
+            <h1>制作期間： 35日</h1>
+          </div>
+          <div class="app-section">
+            <i class="fas fa-laptop-code"></i>
+            <h1>アプリの概要</h1>
+          </div>
+          <ul class="text-list">
+            <li>・ダンサーに特化したSNSアプリケーション</li>
+            <li>・ユーザー同士のマッチングやコンテンツを絞り込んで検索可能</li>
+            <li>・募集機能により練習仲間を募ったり、イベントを主催したり参加できる</li>
+          </ul>
+          <div class="app-section">
+            <i class="fas fa-hand-point-up"></i>
+            <h1>工夫したポイント</h1>
+          </div>
+          <ul class="text-list">
+            <li>・ダンサーに特化したSNSアプリケーション</li>
+            <li>・ユーザー同士のマッチングやコンテンツを絞り込んで検索可能</li>
+            <li>・募集機能により練習仲間を募ったり、イベントを主催したり参加できる</li>
+          </ul>
+        </div>
+      </div>
+      <div class="introduction-area">
+        <div class="main-right">
+          <img src="images/entertainer-icon.png", class="entertainer-icon">
+           <div class="socialLink">
+            <h1 class="title">＜ アプリケーション情報 ＞</h1>
+            <div class="app-area">
+              <p>ドメイン名:</p>
+              <a href="http://entertainer-sample.work/" class="app-link">http://entertainer-sample.work/</a>
             </div>
-          </li>
-        </li>
-        <li class="animationTarget">
-          <a href="#">
-            <img src="images/language.png" alt="言語の画像", id="languages">
-          </a>
-          <div class="contentsText">
-            <h2>学んだ言語</h2>
-            <p>
-              <span class="frontend">
-                【 フロントエンド 】
-              </span>
-              <br>
-                ・HTML5, CSS, haml, Sass
-              <br>
-                ・Javascrpt (フレームワーク: jQuery)
-              <span class="backend">
-                【 バックエンド 】
-              </span>
-                ・Ruby (フレームワーク: Ruby on Rails)
-            </p>
+            <a href="https://github.com/SeiyaIwanabe/entertainere", class="githubLink">
+              <i class="fab fa-github-square"></i>
+              <p class="github-url">GithubリポジトリURL</p>
+            </a>
+           </div>
+        </div>
+        <div class="main-left">
+          <div class="app-name-2">Entertainer</div>
+          <div class="app-time">
+            <i class="fas fa-calendar-alt"></i>
+            <h1>制作期間： 66日</h1>
           </div>
-        </li>
-        <li class="animationTarget">
-          <a href="http://entertainer-sample.work/">
-            <img src="images/entertainer.png" alt="Entertainerの画像" id="work">
-          </a>
-          <div class="contentsText">
-            <h2>ポートフォリオ作品</h2>
-            <p id="work-intriduction">
-              <span class="work-explanation">
-                "ダンス"でつなぐマッチングサービス。
-                誰もが自由にイベントを主催し、ダンサーの活躍の場を広げる
-                プラットフォームサービスです。
-              </span>
-              <br>
-              <a href="https://github.com/SeiyaIwanabe/entertainer" id="github-entertainer">Githubリポジトリはこちら</a>
-            </p>
+          <div class="app-section">
+            <i class="fas fa-laptop-code"></i>
+            <h1>アプリの概要</h1>
           </div>
-        </li>
-        <li class="animationTarget">
-          <a href="https://qiita.com/anago1030/items/73ed40cc7f093edf78d9">
-            <img src="images/tools.png" alt="ツールの画像", id="tools-image">
-          </a>
-          <div class="contentsText">
-            <h2>使用ツール</h2>
-            <p>
-              <span class="heading">使用ツール一覧</span>
-              <br>
-              クラウド作図: <span class="tools">Lucidchart</span>
-              <br>
-              バージョン管理: <span class="tools">Github</span>
-              <br>
-              タスク管理: <span class="tools">Trello</span>
-              <br>
-              Web制作ツール: <span class="tools">Responsively</span>
-              <br>
-              機械翻訳システム: <span class="tools">DeepL</span>
-            </p>
+          <ul class="text-list">
+            <li>・ダンサーと企業をつなぐマッチングプラットフォーム</li>
+            <li>・個人、企業問わず様々なイベントを主査可能</li>
+            <li>・ダンサーは興味のある案件に参画できる</li>
+          </ul>
+          <div class="app-section">
+            <i class="fas fa-hand-point-up"></i>
+            <h1>工夫したポイント</h1>
           </div>
-        </li>
-        <li class="animationTarget">
-          <a href="https://qiita.com/anago1030">
-            <img src="images/qiita-thumnail.png" alt="Qiitaの画像", id="Qiita-image">
-          </a>
-          <div class="contentsText">
-            <h2>Qiitaで発信</h2>
-            <p>
-              主にアプリ開発中の気づきや学びをアウトプットしています。
-              <br>
-              累計で39記事を執筆しました。
-            </p>
-          </div>
-        </li>
-      </ul>
+          <ul class="text-list">
+            <li>・ダンサーに特化したSNSアプリケーション</li>
+            <li>・ユーザー同士のマッチングやコンテンツを絞り込んで検索可能</li>
+            <li>・募集機能により練習仲間を募ったり、イベントを主催したり参加できる</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section" id="sec3">React</div>
+      <div class="introduction-area">
+        <div class="main-right">
+          <img src="images/self-icon.jpg", class="self-icon">
+           <div class="socialLink">
+            <h1 class="title">＜ ソーシャルリンク ＞</h1>
+            <a href="https://github.com/SeiyaIwanabe", class="githubLink">
+              <i class="fab fa-github-square"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://qiita.com/anago1030", class="qiitaLink">
+              <i class="fas fa-edit"></i>
+              <p>Qiita</p>
+            </a>
+            <a href="mailto:s1030.business@gmail.com", class="mailLink">
+              <i class="fas fa-envelope"></i>
+              <p>メールアドレス</p>
+            </a>
+           </div>
+        </div>
+        <div class="main-left"></div>
+      </div>
+      <div class="section" id="sec4">Other</div>
+      <div class="introduction-area">
+        <div class="main-right">
+          <img src="images/self-icon.jpg", class="self-icon">
+           <div class="socialLink">
+            <h1 class="title">＜ ソーシャルリンク ＞</h1>
+            <a href="https://github.com/SeiyaIwanabe", class="githubLink">
+              <i class="fab fa-github-square"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://qiita.com/anago1030", class="qiitaLink">
+              <i class="fas fa-edit"></i>
+              <p>Qiita</p>
+            </a>
+            <a href="mailto:s1030.business@gmail.com", class="mailLink">
+              <i class="fas fa-envelope"></i>
+              <p>メールアドレス</p>
+            </a>
+           </div>
+        </div>
+        <div class="main-left"></div>
+      </div>
     </main>
 
     <footer>

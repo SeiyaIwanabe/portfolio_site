@@ -59,15 +59,41 @@
 
   .right-content {
     display: flex;
+    justify-content: space-evenly;
     margin-right: 50px;
+    width: 600px;
   }
   .right-content p {
     color: #FFF;
     font-weight: bold;
     font-size: large;
   }
-  .fab .fa-twitter-square {
-    display: block;
+  .right-content .button {
+    color: #FFF;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    /* width: 100px; */
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+  }
+  .right-content .button:hover {
+    border-color: #FFF;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: transparent;
+    outline-offset: 12px;
+    text-shadow: 2px 2px 3px #000;
   }
 
    i {
@@ -139,7 +165,7 @@
  .arrow-1 {
   margin-top: 10px;
   position: absolute;
-  right: 50vw;
+  right: 50%;
   bottom: 120px;
   width: 30px;
   height: 30px;
@@ -149,7 +175,7 @@
  }
  .arrow-2 {
   position: absolute;
-  right: 50vw;
+  right: 50%;
   bottom: 100px;
   width: 30px;
   height: 30px;
@@ -159,7 +185,7 @@
  }
  .arrow-3 {
   position: absolute;
-  right: 50vw;
+  right: 50%;
   bottom: 80px;
   width: 30px;
   height: 30px;
@@ -169,7 +195,7 @@
  }
  .arrow-4 {
   position: absolute;
-  right: 50vw;
+  right: 50%;
   bottom: 60px;
   width: 30px;
   height: 30px;
@@ -179,7 +205,7 @@
  }
  .arrow-5 {
   position: absolute;
-  right: 50vw;
+  right: 50%;
   bottom: 40px;
   width: 30px;
   height: 30px;
@@ -189,202 +215,183 @@
  }
 
  
- /*メイン部分*/
+ /*メイン部分(共通項目)*/
  main {
-   padding: 250px;
+   padding: 50px;
    width: 100vw;
-   background-color: rgba(20, 20, 20, 0.8);
+   /* background-color: rgba(20, 20, 20, 0.8); */
+   background-color: #FFFFFF;
  }
 
- .contents li {
-   position: relative;
-   list-style: none;
+ .section {
+   /* width: 300px; */
+   text-align: center;
+   color: #7B7B7B;
+   font-weight: bold;
+   font-size: 50px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-bottom: 50px;
+   padding: 10px;
+   border-bottom: 1px solid #7B7B7B;
  }
 
- .contents li.show h2,
- .contents li.show p,
- main .contents li.show a {
-   opacity: 1;
-   transform: none;
+ .introduction-area {
+   width: 100%;
+   display: flex;
+   height: 1000px;
  }
 
- .contents li:not(:first-of-type) {
-   margin-top: 300px;
+ .main-right {
+   width: 100%;
+   height: 1000px;
  }
 
- .contents li:nth-of-type(odd) .contentsText {
-   right: 0;
+ .self-icon {
+    display: block;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+ }
+ .pahoo-icon {
+  display: block;
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 15px;
+ }
+ .entertainer-icon {
+    display: block;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 1px solid #7B7B7B;
  }
 
- .contents li:nth-of-type(even) .contentsText {
-   align-items: flex-start;
-   transform: translate(-20px, -20px);
-}
-
- .contents li:nth-of-type(even) a {
-   margin-left: auto;
-   transform: translate(20px, 20px);
- }
-
- .contentsText {
+ .socialLink {
+   margin-left: 220px;
    display: flex;
    flex-direction: column;
-   align-items: flex-end;
-   position: absolute;
-   top: 40px;
+   align-items: flex-start;
  }
 
- .contents h2 {
-   color: #FFF;
-   font-size: 50px;
+ .socialLink .title {
    font-weight: bold;
-   white-space: nowrap;
-   background-color: rgba(20, 20, 20, 0.8);
-   padding: 10px 20px;
-   line-height: 1.4;
-   letter-spacing: .05em;
-   border-radius: 5px;
-   opacity: 0;
-   transform: translateY(20px);
-   transition: 1s;
+   font-size: 20px;
+   margin-bottom: 20px;
  }
 
- .contents p {
-   line-height: 2.0;
-   color: #FFF;
-   background-color: #555;
-   font-size: 14px;
-   max-width: 500px;
-   margin-top: 40px;
-   padding: 15px;
-   border-radius: 5px;
-   opacity: 0;
-   transform: translateY(20px);
-   transition: 1s;
+ .githubLink {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+ .githubLink i {
+   color: #222222;
+ }
+ .githubLink .github-url {
+   color: lightskyblue;
+   border-bottom: 1px solid #7B7B7B;
+ }
+ .qiitaLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+ }
+ .qiitaLink i {
+   color: lightgreen;
+ }
+ .mailLink {
+  display: flex;
+  align-items: center;
+ }
+ .mailLink i {
+   color: #7B7B7B;
  }
 
- .school {
-   font-weight: bold;
-   display: block;
-   border-bottom: 1px solid black;
-   font-size: large;
+ .app-area {
+   display: flex;
+   margin-bottom: 20px;
  }
- .contact {
-  font-weight: bold;
-  display: block;
-  border-bottom: 1px solid black;
-  font-size: large;
+ .app-area p {
+   margin-right: 10px;
  }
- #github {
-  text-align: center;
-  display: block;
-  width: 200px;
-  color: #FFF;
-  text-decoration: none;
-  border: 1px solid transparent;
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
- }
- #github:hover {
-  border-color: #FFF;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-  outline-color: transparent;
-  outline-offset: 12px;
-  text-shadow: 2px 2px 3px #000;
+ .app-link {
+   color: lightskyblue;
+   border-bottom: 1px solid #7B7B7B;
  }
 
- .video {
-   position: relative;
-   height: 450px;
-   padding-bottom: 56.25%;
- }
- .video iframe {
-   position: absolute;
-   left: 300px;
-   width: 500px;
-   height: 315px;
- }
- #github-entertainer {
-  text-align: center;
-  display: block;
-  width: 200px;
-  color: #FFF;
-  text-decoration: none;
-  border: 1px solid transparent;
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
- }
- #github-entertainer:hover {
-  border-color: #FFF;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-  outline-color: transparent;
-  outline-offset: 12px;
-  text-shadow: 2px 2px 3px #000;
-}
-
-
- .heading {
-   display: block;
-   margin-bottom: 2px;
-   font-weight: bold;
-   font-size: 16px;
-  border-bottom: 1px solid lightgray;
- }
-
- .frontend {
-   font-size: 16px;
-   font-weight: bold;
-   color: #FFF;
- }
- .backend {
-   display: block;
-   margin-top: 15px;
-   font-size: 16px;
-   font-weight: bold;
-   color: #FFF;
- }
- .tools {
-   font-weight: bold;
- }
- .work-explanation {
-   display: block;
-   border-bottom: 1px solid lightgray;
- }
-
- .contents a {
-   display: block;
-   width: 67%;
-   border-radius: 5px;
-   opacity: 0;
-   transform: translateX(-20px);
-   transition: 1s 0.5s;
- }
-
- .contents a img {
-   display: block;
+ /* 左側のコンテンツ */
+ .main-left {
    width: 100%;
+  height: 1000px;
+  background-color: bisque;
  }
 
- #languages {
-   display: block;
-   width: 90%;
+ .app-name {
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   border: 1px solid #7B7B7B;
+   height: 50px;
+   width: 150px;
+   line-height: 50px;
+   letter-spacing: 7px;
+   border-radius: 15px;
+   margin-bottom: 50px;
  }
- #self-image {
-   display: block;
-   width: 70%;
-   height: 70%;
+ .app-name-2 {
+  text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   border: 1px solid #7B7B7B;
+   height: 50px;
+   width: 300px;
+   line-height: 50px;
+   letter-spacing: 7px;
+   border-radius: 15px;
+   margin-bottom: 50px;
  }
 
- .self-introduction-text {
-   line-height: 4.0;
-   font-size: large;
+ .app-time {
+   display: flex;
+   margin-bottom: 50px;
  }
+ .app-time h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+ }
+ .app-section {
+   display: flex;
+   /* align-items: center; */
+ }
+ 
+ .app-section h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+ }
+ .text-list {
+   margin-bottom: 50px;
+ }
+ .text-list li {
+   color: #7B7B7B;
+   margin-bottom: 10px;
+   margin-left: 80px;
+ }
+
+
+
+
+
+
+
+ 
 
  footer {
    height: 50px;
@@ -394,225 +401,4 @@
  footer p {
    line-height: 50px;
    font-weight: bold;
- }
-
-
-
- /* レスポンシブデザイン */
- @media (max-width: 480px) {
-
-  .top-contents {
-    display: flex;
-    align-items: center;
-  }
-
-  .left-content {
-    height: 30px;
-    line-height: 30px;
-    padding-top: 5p;
-    width: 260px;
-  }
-
-  i {
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 30px;
-    line-height: 30px;
-    margin-top: 3px;
-  }
-
-  .owner-name {
-    font-size: 0.9em;
-  }
-
-  .typed_wrap h1 {
-    font-size: 1.5rem;
-    height: 100px;
-    line-height: 100px;
-  }
-
-
-  .right-content {
-    height: 30px;
-    line-height: 30px;
-    margin-right: 0;
-  }
-  .right-content p {
-    font-size: 0.9rem;
-  }
-
-  .bottom-text {
-    position: absolute;
-    left: 50px;
-    bottom: 170px;
-    font-size: 14px;
-    letter-spacing: 3px;
-    font-weight: bold;
-  }
-
-  .self-introduction {
-    line-height: 2.0;
-    position: absolute;
-    right: 0;
-    top: 80px;
-    color: #FFF;
-    font-size: 0.7rem;
-    letter-spacing: 3px;
-    font-weight: bold;
-  }
-
-  .arrow-1 {
-    right: 175px;
-   }
-   .arrow-2 {
-    right: 175px;
-   }
-   .arrow-3 {
-    right: 175px;
-   }
-   .arrow-4 {
-    right: 175px;
-   }
-   .arrow-5 {
-    right: 175px;
-   }
-
-  main {
-    padding: 100px;
-    width: 100vw;
-    position: relative;
-  }
-
-  .contents li:not(:first-of-type) {
-    /* margin-top: 100px; */
-  }
-
-  .animationTarget {
-    margin-bottom: 280px;
-  }
-
-  .contentsText {
-    position: absolute;
-    width: 150px;
-    top: -10px;
-    left: -25px;
-  }
-  .contentsText p {
-    font-size: small;
-  }
-
-  .contents h2 {
-    font-size: 14px;
-    padding: 10px 20px;
-    line-height: 1.4;
-  }
-
-  .contents h2 p {
-    font-size: small;
-  }
-
-  .contents h2 p span {
-    font-size: small;
-  }
-
-  .heading {
-    font-size: small;
-  }
-  .school {
-    font-size: 0.8rem;
-  }
-  .contact {
-    font-size: 0.8rem;
-  }
-  .frontend {
-    font-size: 0.5rem;
-    font-weight: bold;
-  }
-  .backend {
-    font-size: 0.5rem;
-    font-weight: bold;
-  }
-  .work-explanation {
-    display: block;
-    border-bottom: 1px solid lightgray;
-  } 
-  
-  .contents a { 
-    width: 200px;
-    height: 200px;
-  }
-  #github-entertainer {
-    display: block;
-    height: auto;
-    font-size: 0.7rem;
-    width: 140px;
-  }
-
-  .video {
-    position: relative;
-    height: 450px;
-    padding-bottom: 56.25%;
-  }
-  .video iframe {
-    position: absolute;
-    left: 20px;
-    width: 220px;
-    height: 300px;
-  }
-  #github {
-    height: auto;
-    display: block;
-    width: 140px;
-    font-size: 0.7rem;
-  }
-
-  .contents a img {
-    width: 200px;
-    height: 200px;
-  }
-
-  #self-image {
-    position: absolute;
-    display: block;
-    width: 180px;
-    height: 300px;
-    left: 60px  ;
-  }
-
-  #languages {
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: 60px;
-  }
-
-  #work {
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: 60px;
-  }
-
-  #work-intriduction {
-    width: 200px;
-  }
-
-  #tools-image {
-    width: 170px;
-    display: block;
-    position: absolute;
-    left: 60px;
-  }
-
-  #Qiita-image {
-    width: 170px;
-    display: block;
-    position: absolute;
-    left: 60px; 
-  }
-
-  .contents p {
-    line-height: 1.6;
-    font-size: 10px;
-  }
  }
