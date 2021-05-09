@@ -79,7 +79,8 @@
    }
 
    .owner-name {
-     color: #8B0000;
+     margin-left: 20px;
+     color: #FFF;
      font-size: large;
    }
   .typing {
