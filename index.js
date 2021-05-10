@@ -1,7 +1,7 @@
 $(function() {
   //タイピングアニメーション
   $('.typed').typed({
-    strings: ["welcome to My Portfolio.", "Let's scroll down."],
+    strings: ["welcome to My Portfolio-Site.", "Please scroll down."],
     typeSpeed: 100,
     startDelay: 1000,
     backSpeed: 20,
