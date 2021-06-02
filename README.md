@@ -1,13 +1,8 @@
-# Welcome to IwanabeSeiya's portfolio_site
- 
-## Contents
+# ポートフォリオサイトの記載内容
 
-- My profile
-- Language I am using
-- Portfolio
-- Tools I am using
-- Output
-
-The portfolio is explained in a separate repository.
-Please have a look if you like.
-https://github.com/SeiyaIwanabe/entertainer
+- 自己紹介
+- 学習した言語
+- どんなエンジニアになりたいか
+- Ruby on Railsでの成果物
+- Reactでの成果物
+- その他使用技術とツール
