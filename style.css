@@ -620,4 +620,108 @@ font-weight: bold;
     width: 200px;
     height: 100vh;
   } */
+
+  main {
+    padding: 10px;
+  }
+
+  .main-right {
+    height: 600px;
+  }
+
+  .section {
+    margin-bottom: 250px;
+  }
+
+  .introduction-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carrier-text {
+    margin-left: 40px;
+  }
+  .learn-bottom {
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .learn-area h1 {
+    font-size: 15px;
+  }
+  .to-be-top h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;  
+  }
+
+  .self-icon {
+    width: 200px;
+    height: 250px;
+  }
+  .socialLink  {
+    margin-left: 60px;
+  }
+  .githubLink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .socialLink .title {
+    font-size: 15px;
+  }
+
+  .app-area {
+    font-size: 15px;
+  }
+
+  .app-main-left {
+    margin-top: 200px;
+    width: 100%;
+    height: 700px;
+  }
+
+  .text-list li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .entertainer-icon {
+    width: 300px;
+    height: 600px;
+  }
+
+  .video-demo {
+    width: 300px;
+    /* height: 500px; */
+  }
+
+  .react-introduction-area {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 500px;
+  }
+
+  .react-main-left {
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+  }
+
+  .qiita-icon {
+    width: 350px;
+    height: 600px;
+  }
+  .qiita-text {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  .other-main-left {
+    margin-top: 100px;
+    width: 70%;
+    height: 700px;
+  }
 }
