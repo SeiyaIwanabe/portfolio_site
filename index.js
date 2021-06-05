@@ -1,4 +1,15 @@
 $(function() {
+
+  // イニシャルアニメーション
+  $('.line').animate({"width":"100%"}, 1000, function() {
+    $('.line').css("right", 0)
+    $('.line').animate({"width":"0%"}, function() {
+      $('.up').animate({"height":"0%"});
+      $('.down').animate({"height":"0%"});
+    });
+  })
+
+
   //タイピングアニメーション
   $('.typed').typed({
     strings: ["welcome to My Portfolio-Site.", "Please scroll down."],
@@ -11,26 +22,6 @@ $(function() {
     backDelay: 500
   });
 
-  //スクロールしたら要素が出現
-  // const targetElement = document.querySelectorAll(".animationTarget");
-  // document.addEventListener("scroll", function() {
-  //   for (let i = 0; i < targetElement.length; i++) {
-  //     const  getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.4
-
-  //     if (window.innerHeight > getElementDistance) {
-  //       targetElement[i].classList.add("show");
-  //     }
-  //   };
-  // })
-
-  // イニシャルアニメーション
-  $('.line').animate({"width":"100%"}, 1000, function() {
-    $('.line').css("right", 0)
-    $('.line').animate({"width":"0%"}, function() {
-      $('.up').animate({"height":"0%"});
-      $('.down').animate({"height":"0%"});
-    });
-  })
 
   // 矢印を動かす
   setInterval(function() {
@@ -62,6 +53,7 @@ $(function() {
   
   },1000);
 
+
   // 指定位置にスクロール
   $('a[href^="#"]').click(function() {
     // スクロールの速度
@@ -74,6 +66,22 @@ $(function() {
       scrollTop: position
     }, speed, 'swing');
     return false;
+  });
+
+  // ハンバーガーメニュー
+  const $menu = document.querySelector('.icon-wrapper');
+  
+  //シェアリングを押したらイベント発火
+  $menu.addEventListener('click', (e) => {
+    e.preventDefault;
+    $('.content-nav').animate({ "margin-right": 0 }, 200);
+    $('#js-nav-close').css('display', 'block');
+  });
+
+  // 周りの黒背景をクリックしたらメニューと黒背景が閉じる
+  $('#js-nav-close').click(function() {
+    $('.content-nav').animate({ "margin-right": -200 }, 200);
+    $(this).css('display', 'none');
   });
 
 });
