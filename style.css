@@ -605,6 +605,7 @@ font-weight: bold;
   .icon-wrapper {
     display: block;
     cursor: pointer;
+    z-index: 200;
   }
   .icon-item {
     height: 4px;
